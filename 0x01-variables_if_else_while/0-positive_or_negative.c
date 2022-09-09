@@ -8,7 +8,7 @@
  * * Description: using the main function
  * * this program prints "Programming is positive, zero, or negative
  * * Return: 0
- * */
+ */
 int main(void)
 {
 	int n;
@@ -29,4 +29,4 @@ int main(void)
 			printf("%i is negative\n", n);
 	}
 	return (0);
-}
+i}

@@ -1,13 +1,13 @@
 #include <stdio.h>
 
- /**
- * main - Entry point
- *
- * Return: Always 0 (Success/correct)
- */
+/**
+* main - Entry point
+*
+* Return: Always 0 (Success/correct)
+*/
 
- int main(void)
- {
+int main(void)
+{
 	int p, q;
 
 	for (p = 0; p <= 100; p++)
@@ -31,4 +31,4 @@
 	}	
 	putchar('\n');
 	return (0);
- }
+}

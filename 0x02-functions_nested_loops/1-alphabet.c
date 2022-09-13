@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * main - alphabet
- * print_alphabet_x10 - print a - z ten times
+ *print_alphabet - Entry point
+ *
+ *Description: program that prints the alphabets
+ *followed by a new line
+ *
+ *Return: Exit int function with an int 0
  */
-
-void print_alphabet_x10(void)
+void print_alphabet(void)
 {
-	int i;
-	char j;
+	int aj;
 
-	for (i = 0; i < 10; i++)
+	for (aj = 'a'; aj <= 'z'; aj++)
 	{
-		for (j = 'a'; j <= 'z'; j++)
-		{
-			_putchar(j);
-		}
-		_putchar('\n');
+		_putchar(aj);
 	}
+	_putchar('\n');
+
 }

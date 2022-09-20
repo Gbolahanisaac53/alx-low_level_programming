@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * reset_to_98 - this function update the value to 98
 *

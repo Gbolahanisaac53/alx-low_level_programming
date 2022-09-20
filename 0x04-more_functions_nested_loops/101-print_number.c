@@ -1,48 +1,34 @@
 #include "main.h"
 
-void print_prev_digits(int n);
-
 /**
- * print_number - prints a number using _putchar
- *
- * @n: number to print
- * Return: void
+ * print_number - prints an integer
+ * @n: param
  */
 void print_number(int n)
 {
-	if (n < 0)
-	{
-		_putchar('-');
-	}
-	if (n > 9 || n < -9)
-		print_prev_digits(n);
-	if (n < 0)
-		_putchar(((n % 10) * -1) + '0');
-	else
-		_putchar((n % 10) + '0');
-}
+	unsigned int i, j, count;
 
-/**
- * print_prev_digits - recursive function to print all previous digits in num
- *
- * @n: number to print previous digits of
- * Return: void
- */
-void print_prev_digits(int n)
-{
-	if (((n / 10) < -9) || ((n / 10) > 9))
+	if (n < 0)
 	{
-		print_prev_digits(n / 10);
-		if (n < 0)
-			_putchar((((n / 10) % 10) * -1) + '0');
-		else
-			_putchar(((n / 10) % 10) + '0');
+		_putchar(45);
+		i = n * -1;
 	}
 	else
 	{
-		if (n < 0)
-			_putchar(((n / 10) * -1) + '0');
-		else
-			_putchar((n / 10) + '0');
+		i = n;
+	}
+
+	j = i;
+	count = 1;
+
+	while (j > 9)
+	{
+		j /= 10;
+		count *= 10;
+	}
+
+	for (; count >= 1; count /= 10)
+	{
+		_putchar(((i / count) % 10) + 48);
 	}
 }
